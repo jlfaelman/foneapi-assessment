@@ -106,7 +106,7 @@ const ChatPage = () => {
                 <div className="flex  flex-col bg-green-700 w-[15%] p-2">
                     <button className="bg-white text-green-700 font-semibold p-2 rounded hover:bg-gray-100" onClick={handleOpenModal}> Chat Someone</button>
                     <AddContact isOpen={modalOpen} onClose={handleCloseModal} > </AddContact>
-                    <div className="flex flex-col contacts-container mt-[2rem]">
+                    <div className="flex flex-col contacts-container mt-[2rem] gap-2">
                         <p className="text-white font-semibold">Contacts:</p>
                         {rooms.map((e, i) => {
                             if (e.from === getID()) {
